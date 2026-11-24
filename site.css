@@ -10,3 +10,19 @@ form{padding:24px;display:grid;gap:14px}label{display:grid;gap:5px;font-weight:6
 @media(max-width:680px){.wrap{width:calc(100% - 36px)}.nav{min-height:64px;gap:8px}.nav nav{display:none}.brand{font-size:.75rem;gap:7px}.button.small{font-size:.76rem;padding-inline:9px;gap:6px}.hero-grid,.split{grid-template-columns:1fr}.hero-grid{padding-block:54px 26px;gap:14px}.hero h1{font-size:clamp(2.52rem,9.3vw,4.2rem)}.hero-art{width:min(100%,380px);margin:auto}.section{padding-block:48px}.cards,.cases,.steps{grid-template-columns:1fr;gap:17px}.proof .wrap{display:grid;gap:8px}.proof .wrap div{font-size:.85rem}.case-art{aspect-ratio:2.35}.floating{bottom:12px;right:12px;padding:10px}.floating span{display:none}footer .wrap{flex-wrap:wrap;padding-right:42px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
 .case-art img{width:min(75%,210px);height:88px;padding:8px 12px;object-fit:contain;background:#f5f7f8;border-radius:10px;box-shadow:0 12px 32px #0004}
+
+.solutions-extra {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+  padding: clamp(20px, 4vw, 32px);
+  border: 1px solid #44325e;
+  border-radius: 15px;
+  background: linear-gradient(120deg, #211532, var(--surface));
+}
+.solutions-extra h3 { font-size: 1.45rem; }
+.solutions-extra p, .solutions-extra li { color: var(--muted); }
+.solutions-extra p { margin-top: 8px; }
+.solutions-extra ul { display: grid; gap: 8px; padding-left: 20px; }
+.solutions-extra strong { color: var(--white); }
+.solutions-extra .service { justify-self: start; padding-top: 0; }
