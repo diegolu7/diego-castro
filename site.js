@@ -28,17 +28,3 @@ document.querySelectorAll('[data-service]').forEach((link) => {
     form.elements.servicio.value = link.dataset.service;
   });
 });
-
-const hero = document.querySelector('.hero');
-const motion = matchMedia('(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)');
-let frame = null;
-hero.addEventListener('pointermove', (event) => {
-  if (!motion.matches) return;
-  if (frame !== null) cancelAnimationFrame(frame);
-  frame = requestAnimationFrame(() => {
-    const bounds = hero.getBoundingClientRect();
-    hero.style.setProperty('--x', `${event.clientX - bounds.left}px`);
-    hero.style.setProperty('--y', `${event.clientY - bounds.top}px`);
-    frame = null;
-  });
-}, { passive: true });
